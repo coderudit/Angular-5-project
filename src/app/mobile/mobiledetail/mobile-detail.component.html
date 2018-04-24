@@ -1,0 +1,13 @@
+<div class="panel">
+  <div class="panel-heading">
+    <img src='{{mobileDetail.DeviceImgSrc}}' class="center-block img-responsive" style="height: 200px;">
+  </div>
+  <div class="panel-body text-center">
+    <h4>{{mobileDetail.DeviceName}}</h4>
+    <h4>Price: {{mobileDetail.DevicePrice}} $</h4>
+  </div>
+  <div class="panel-footer text-center">
+    <a class="btn btn-default" routerLink="/mobilelist/{{ mobileDetail.DeviceOrder }}">View</a>
+    <button type="button" class="btn btn-default" (click)="AddToCart(mobileDetail)">Add to Cart</button>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<div class="row">
+<div class="col-md-4">
+  <img src='{{mobile.DeviceImgSrc}}' class="center-block img-responsive" style="height: 400px;">
+</div>
+<div class="col-md-8" style="margin-top: 20px;"> 
+  <h3>{{mobile.DeviceName}}</h3>
+  <h3>Price: {{mobile.DevicePrice}} $</h3>
+  <div>Model Number: {{mobile.ModelNumber}}</div>
+  <div>Colors: <span>{{mobile.Colors}}</span></div>
+  <div>Screen Size: {{mobile.ScreenSize}} inch</div>
+  <div>Operating System: {{mobile.OperatingSystem}}</div>
+  <div>RAM: {{mobile.RAM}} GB</div>
+  <div>Storage: {{mobile.Storage}} GB</div>
+</div>
+<button type="button" class="btn btn-default text-center" (click)="AddToCart(mobile)" style="margin-top: 20px; margin-left: 15px;">Add to Cart</button>
+</div>

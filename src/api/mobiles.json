@@ -1,0 +1,20 @@
+[
+    {
+        "DeviceName": "iPhone 7",
+        "DevicePrice": "800",
+        "DeviceImgSrc": "",
+        "DeviceOrder": 1
+    },
+    {
+        "DeviceName": "Pixel 2",
+        "DevicePrice": "600",
+        "DeviceImgSrc": "",
+        "DeviceOrder": 2
+    },
+    {
+        "DeviceName": "HTC One",
+        "DevicePrice": "700800",
+        "DeviceImgSrc": "",
+        "DeviceOrder": 3
+    }
+]

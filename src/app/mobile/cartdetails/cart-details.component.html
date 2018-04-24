@@ -1,0 +1,26 @@
+<div>
+  <h2>{{pageTitle}}</h2>
+  <div *ngIf="mobileDetails.length > 0">
+<table class="table table-responsive table-bordered table-striped">
+  <th class="text-center">Device</th>
+  <th class="text-center">Model</th>
+  <th class="text-center">Quantity</th>
+  <th class="text-center">Price</th>
+  <th class="text-center"></th>
+  <tr *ngFor='let mobileDetail of mobileDetails'>
+    <td class="text-center"><img src='{{mobileDetail.DeviceImgSrc}}' class="center-block img-responsive" style="height: 100px;"></td>
+    <td class="text-center"><span>{{mobileDetail.ModelNumber}}</span></td>
+    <td class="text-center"><input type="number" [(ngModel)]="mobileDetail.NumberOfOrders" min="0"></td>
+    <td class="text-center"><span>{{mobileDetail.DevicePrice}}</span></td>
+    <td class="text-center"><button type="button" class="btn" (click)='RemoveItem(mobileDetail)'>Remove</button></td>
+  </tr>
+</table>
+<div class="row">
+<div class="col-md-offset-8 col-md-4"><b>Total Price: </b><label>{{totalPrice}} $</label> </div>
+<div class="col-md-offset-8 col-md-4"><button type="button" class="btn" (click)='PlaceOrder()'>Place Order</button></div>
+</div>
+</div>
+</div>
+<div *ngIf="!(mobileDetails.length > 0)">
+  <h3 class="text-center">No items in shopping cart</h3>
+</div>

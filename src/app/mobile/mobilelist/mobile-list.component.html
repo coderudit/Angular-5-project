@@ -1,0 +1,11 @@
+<div class="row" style="margin-left: 10px">
+  <div class="col-md-offset-9 col-md-3">
+      <label>Search: </label>
+      <input type='text' [(ngModel)]='listFilter' />
+  </div>
+<div *ngFor='let mobile of filteredMobiles'>
+  <div class="col-md-3">
+  <app-mobile-detail [mobileDetail]='mobile'></app-mobile-detail>
+</div>
+</div>
+</div>
